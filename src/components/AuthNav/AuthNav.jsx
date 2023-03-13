@@ -1,5 +1,5 @@
 import { StyledLink } from 'components/Navigation/Navigation.styled';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 export const AuthNav = () => {
   return (
