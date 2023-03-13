@@ -6,9 +6,9 @@ import { AppBar } from './AppBar/AppBar';
 export function Layout() {
   return (
     <>
-      <AppBar></AppBar>
+      <AppBar />
       <Suspense fallback={null}>
-        <Outlet></Outlet>
+        <Outlet />
       </Suspense>
       <Toaster position="top-right" reverseOrder={false} />
     </>

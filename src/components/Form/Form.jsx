@@ -40,7 +40,7 @@ export const Form = () => {
       alert(`${name} is aready in contacts.`);
       return;
     }
-    console.log({ name, number });
+
     dispatch(addContact({ name, number }));
 
     reset();

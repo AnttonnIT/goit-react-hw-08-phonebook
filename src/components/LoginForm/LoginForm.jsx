@@ -11,7 +11,7 @@ export function LoginForm() {
       email: form.elements.email.value,
       password: form.elements.password.value,
     };
-    console.log(data);
+
     dispatch(logIn(data));
     form.reset();
   };

@@ -12,8 +12,13 @@ export const ContactList = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    if (contacts.length > 0) {
+      return;
+    }
+
     dispatch(fetchContacts());
-  }, [dispatch]);
+  }, [contacts, dispatch]);
+
   const getFilteredContacts = () => {
     const regExp = new RegExp(filter, 'gi');
     return contacts.filter(({ name }) => name.match(regExp));
