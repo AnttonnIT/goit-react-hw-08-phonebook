@@ -8,3 +8,8 @@ export const StyledLink = styled(NavLink)`
     color: red;
   }
 `;
+
+export const Nav = styled.nav`
+  display: flex;
+  gap: 10px;
+`;
