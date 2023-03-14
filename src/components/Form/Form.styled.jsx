@@ -33,7 +33,10 @@ export const StyledButton = styled.button`
   background-color: #2c3e50;
   color: #ffffff;
   padding: 10px 20px;
-  &:hover {
+
+  transition: background-color 250ms linear, box-shadow 250ms linear;
+  &:hover,
+  &:focus {
     background-color: #34495e;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   }

@@ -7,7 +7,6 @@ export default function Contacts() {
   return (
     <Container>
       <h2>Phonebook</h2>
-
       <Form />
       <h2>Contacts</h2>
       <Filter />

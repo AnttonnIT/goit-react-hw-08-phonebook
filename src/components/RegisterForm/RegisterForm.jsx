@@ -6,7 +6,6 @@ import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
-
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { ThemeProvider } from '@mui/material/styles';
@@ -19,6 +18,7 @@ export function RegisterForm() {
 
   const handleSubmit = e => {
     e.preventDefault();
+    setError('');
     const form = e.currentTarget;
     const name = form.elements.name.value;
     const email = form.elements.email.value;
@@ -125,24 +125,3 @@ export function RegisterForm() {
     </ThemeProvider>
   );
 }
-//  <form onSubmit={handleSubmit}>
-//    <label>
-//      Username
-//      <input type="text" name="name" required />
-//    </label>
-//    <label>
-//      Email
-//      <input type="email" name="email" required />
-//    </label>
-//    <label>
-//      Password
-//      <input
-//        type="password"
-//        name="password"
-//        title="Password must be at least 7 characters long"
-//        pattern=".{7,}"
-//        required
-//      />
-//    </label>
-//    <button type="submit">Register</button>
-//  </form>;

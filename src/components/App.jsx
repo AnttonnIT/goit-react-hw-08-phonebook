@@ -1,10 +1,8 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-
 import { Layout } from './Layout';
 import { Route, Routes } from 'react-router-dom';
 import { refreshUser } from 'redux/auth/operations';
-
 import { RestrictedRoute } from './RestrictedRoute';
 import { useAuth } from 'hooks/useAuth';
 import { PrivateRoute } from './PrivateRoute';
@@ -55,6 +53,7 @@ export function App() {
                 />
               }
             />
+            <Route path="*" element={<HomePage />} />
           </Route>
         </Routes>
       </Suspense>

@@ -13,10 +13,13 @@ export const UserMenuButton = styled.button`
 
   padding: 3px 10px;
   background-color: #2c3e50;
+
+  transition: background-color 250ms linear, box-shadow 250ms linear;
   :active {
     background-color: #5f5ffc;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #34495e;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   }
